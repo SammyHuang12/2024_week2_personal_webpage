@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+:root{
+    --black:black;
+    --green:#00FFA3;
+    --white:white;
+    --gray:#D1D1D1;
+}
+body{
+    line-height: 1.5;
+    font-family: "Bruno Ace SC", sans-serif;
+    color: var(--white);
+}
+h1{
+    font-size: 128px;
+    color: var(--green);
+    text-align: end;
+}
+h2{
+    font-size: 64px;
+}
+.fz-24{
+    font-size: 24px;
+}
+.fz-20{
+    font-size: 20px;
+}
+.d-flex{
+    display:flex;
+    justify-content: space-between;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.align-items-center{
+    align-items: center;
+}
+.justify-content-start{
+    justify-content: start;
+}
+.align-content-space-between{
+    align-content: space-between;    
+}
+.p-td-160{
+    padding: 160px 0;
+}
+.p-td-96{
+    padding: 96px 0;
+}
+.p-td-40{
+    padding: 40px 0;
+}
+.mt-128{
+    margin-top: 128px;
+}
+.mb-36{
+    margin-bottom: 36px;
+}
+.mb-32{
+    margin-bottom: 32px;
+}
+.mb-4{
+    margin-bottom: 4px;
+}
+.w-50{
+    width: 636px;
+}
+.g-28-24{
+    gap: 28px 24px;
+}
+.g-24{
+    gap: 24px;
+}
+.g-20{
+    gap: 20px;
+}
+.g-16{
+    gap: 16px;
+}
+.btn{
+    width: 185px;
+    padding: 12px 24px;
+    border-radius: 32px;    
+}
+.btn *{
+    z-index: 2;
+}
+.btn-w{
+    color: var(--black);
+    background: var(--white);
+    margin-left: auto;    
+    position: relative;
+    overflow: hidden;
+}
+.btn-w::before{
+    content: "";
+    width: 0;
+    height: 100%;
+    background: var(--green);
+    position: absolute;
+    transition: all .3s ease;
+    border-radius: 32px;
+    top: 0;
+    left: 0; 
+}
+.btn-w:hover::before{
+    width: 100%;
+}
+.btn-b{
+    color: var(--white);
+    background: var(--black);
+}
+.blow-up{
+    transform: scale(1, 1);
+    transition: all 0.5s ease-out;
+}
+.blow-up-l:hover{
+    transform: scale(1.2);
+}
+.blow-up-m:hover{
+    transform: scale(1.1);
+}
+.blow-up-s:hover{
+    transform: scale(1.05);
+}
+.container{
+    width: 1296px;
+    margin: 0 auto;
+}
+.nav{
+    background: var(--black);
+    color: var(--gray);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+.nav a:hover{
+    color: var(--green);
+    font-weight: bold;
+}
+.header{
+    background: var(--black);
+    padding-top: 72px;
+    padding-bottom: 32px;
+}
+.introduction{
+    background-image: url('../images/background-img.png');
+    background-size: cover;
+}
+.about-me{
+    color: var(--black);
+}
+.card{
+    padding-bottom: 4px;
+}
+.card-item{
+    border: 1px solid #E3E3E3;
+    padding: 16px;
+    box-shadow: 4px 4px 4px 0px #00000014;
+    width: 306px;
+}
+.card-item span{
+    display:block;
+    margin-bottom: 4px;
+}
+.title{
+    width: 526px;
+}
+.contact-me{
+    background: linear-gradient(180deg, #050014 0%, rgba(1, 2, 30, 0.89) 100%);
+}
+.soical a{
+    overflow: hidden;
+}
+.soical li a:hover{
+    border-radius: 40px;
+    box-shadow: 0px 0px 16px 3px #9094FFE5;
+}
+.soical li:nth-child(2) a:hover{
+    border-radius: 40px;
+    box-shadow: 0px 0px 16px 3px #f720cce5;
+}
+.soical li:last-child a:hover{
+    border-radius: 40px;
+    box-shadow: 0px 0px 16px 3px var(--green);
+}
+.project{
+    color: var(--black);
+}
+.project>ul>li:last-child{
+    width: 856px;
+}
+.pro-title{
+    width: 746px;
+    margin-left: auto;
+    margin-bottom: 16px;
+}
+.footer{
+    background: var(--black);
+    text-align: center;
+}
