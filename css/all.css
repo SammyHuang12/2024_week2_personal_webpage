@@ -4,6 +4,7 @@
     --green:#00FFA3;
     --white:white;
     --gray:#D1D1D1;
+    scroll-padding-top: 128px;
 }
 body{
     line-height: 1.5;
